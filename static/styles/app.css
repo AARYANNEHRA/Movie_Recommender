@@ -1,0 +1,90 @@
+.row1 {
+    display: flex;
+    justify-content: center;
+}
+
+#card1,
+#card2,
+#card3,
+#card4 {
+    margin: 30px 10px;
+    height: 440px;
+    border-radius: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.top {
+    background:url("img.png");
+    opacity: 0.8;
+    width: 70%;
+    height: 350px;
+    margin: auto;
+    justify-content: center;
+}
+
+#search {
+    width: 50%;
+    height: 10px;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#butt {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+#text {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    color: white;
+    padding: 40px 300px;
+    font-size: 60px;
+}
+
+#text2 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: black;
+    padding: 0px 250px;
+    font-size: 30px;
+}
+
+#movie {
+    margin: 50px 225px;
+    width: 70%;
+    height: 350px;
+    border-radius: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+#btn1,#btn2,#btn3,#btn4
+{
+    margin-top: 360px;
+    margin-left: 27px;
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    border-color: black;
+}
+#btn5
+{
+    position:relative;
+    float: left;
+    width: 20%;
+    margin-top:220px;
+    height: 40px;
+    overflow:auto;
+    background-color: black;
+    border-color: black;
+}
+.bot
+{
+    position: absolute;
+}
+.card
+{
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}

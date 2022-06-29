@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/styles/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <title>Movie Recommender</title>
+</head>
+
+<body>
+
+    <div class="sect">
+        <div class="top">
+            <h2 id="text">Find Movies</h2>
+            <form action='/recommend' method="post" class="d-flex" role="search" id="search">
+                <input class="form-control me-2" type="search" placeholder="Avatar" aria-label="Search" name="nm">
+                <button type="submit" class="btn btn-outline" type="submit" id="butt">Search</button>
+            </form>
+        </div>
+        <div class="card" id="movie">
+            <h5 class="card-header">{{movie}}</h5>
+            <div class="card-body">
+                <div class="bot">
+              <h5 class="card-title">Overview :</h5>
+              <p class="card-text">{{overview}}</p>
+              <h5 class="card-title">Genre :</h5>
+              <p class="card-text">{{genre}}</p>
+                </div>
+              <a href="#" class="btn btn-primary" id="btn5">Watch Now</a>
+            </div>
+        </div>
+        <h3 id="text2">Movies Recommended :</h3>
+        <div class="row1">
+            <div class="card" style="width: 15rem;" id="card1">
+                <div class="card-body">
+                    <div class="bot">
+                    <h5 class="card-title">{{a}}</h5>
+                    <p class="card-text"><b>Overview:</b><br>{{o0}}...<br><b>Genre:</b><br>{{g00}}</p>
+                    </div>
+                    <a href="#" class="btn btn-primary" id="btn4">Watch Now</a>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;" id="card2">
+                <div class="card-body">
+                    <div class="bot">
+                    <h5 class="card-title">{{b}}</h5>
+                    <p class="card-text"><b>Overview:</b><br>{{o1}}...<br><b>Genre:</b><br>{{g10}}</p>
+                    </div>
+                    <a href="#" class="btn btn-primary" id="btn3">Watch Now</a>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;" id="card3">
+                <div class="card-body">
+                    <div class="bot">
+                    <h5 class="card-title">{{c}}</h5>
+                    <p class="card-text"><b>Overview:</b><br>{{o2}}...<br><b>Genre:</b><br>{{g20}}</p>
+                    </div>
+                    <a href="#" class="btn btn-primary" id="btn2">Watch Now</a>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;" id="card4">
+                <div class="card-body">
+                    <div class="bot">
+                    <h5 class="card-title">{{d}}</h5>
+                    <p class="card-text"><b>Overview:</b><br>{{o3}}...<br><b>Genre:</b><br>{{g30}}</p>
+                    </div>
+                    <a href="#" class="btn btn-primary" id="btn1">Watch Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
